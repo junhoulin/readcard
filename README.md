@@ -1,1 +1,1 @@
-# readcard
+# 利用panda分析資料 將date欄位設為判斷 進行資料分析
