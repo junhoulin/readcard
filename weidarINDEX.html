@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="weidarCSS.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="announcements.html">公告列表</a></li>
+                    <li><a href="admin.html">管理員登陸</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- 公告列表 -->
+            <section id="announcements">
+                <h2>最新公告</h2>
+                <ul id="announcement-list">
+                    <!-- 公告將會在這裡動態生成 -->
+                </ul>
+            </section>
+
+            <!-- 後台台管理系统 -->
+            <section id="admin">
+                <h2>後台管理系统</h2>
+                <form id="announcement-form">
+                    <label for="title">標题：</label>
+                    <input type="text" id="title" required><br>
+
+                    <label for="content">内容：</label>
+                    <textarea id="content" required></textarea><br>
+
+                    <label for="date">日期：</label>
+                    <input type="date" id="date" required><br>
+
+                    <label for="author">作者：</label>
+                    <input type="text" id="author" required><br>
+
+                    <button type="submit">公告</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+</body>
+
+<script src="weidarJS.js"></script>
+
+</html>
